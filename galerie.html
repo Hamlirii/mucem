@@ -8,28 +8,30 @@
   </head>
   <body>
     <header>
-      <a href="./index.html"><img class="logo"    src="imagesCleanbref3/logo.png"></a>
-      
+      <a href="./index.html"
+        ><img class="logo" src="imagesCleanbref3/logo.png"
+      /></a>
+
       <nav class="navbar">
-          <a href="index.html">ACCUEIL</a>
-          <a href="galerie.html">GALERIE</a>
-          <a href="atelier.html">ATELIER</a>
+        <a href="index.html">ACCUEIL</a>
+        <a href="galerie.html">GALERIE</a>
+        <a href="atelier.html">ATELIER</a>
       </nav>
     </header>
-   
-        <section class="phase_gal1">
-          <h2>GALERIE</h2>
-            <div class="slider">
-              <div class="imgg"> </div>
-            </div>
-        </section>
+
+    <section class="phase_gal1">
+      <h2>GALERIE</h2>
+      <div class="slider">
+        <div class="imgg" id="imgg"></div>
+      </div>
+    </section>
     <footer class="footer_section">
       <div class="container">
-          <h2>CONTACTE - NOUS</h2>
-          <div class="icons">
-          <img src="imagesCleanbref3/🦆 icon _Twitter_.svg" alt="tweeter">
-          <img src="imagesCleanbref3/🦆 icon _Instagram_.svg" alt="insta">
-          <img src="imagesCleanbref3/facebook-svgrepo-com 1.svg" alt="fb">
+        <h2>CONTACTE - NOUS</h2>
+        <div class="icons">
+          <img src="imagesCleanbref3/🦆 icon _Twitter_.svg" alt="tweeter" />
+          <img src="imagesCleanbref3/🦆 icon _Instagram_.svg" alt="insta" />
+          <img src="imagesCleanbref3/facebook-svgrepo-com 1.svg" alt="fb" />
         </div>
         <p>
           &copy;SanaaHamliri/MUCEM/M.ACHRAF CHAOUB
@@ -37,5 +39,24 @@
         </p>
       </div>
     </footer>
+    <script>
+      const imgsSlide = [
+        "img1.png",
+        "history-eating-vintage-bowl-creativity.jpg",
+        "clay-pots-market-morocco_23-2148129835.jpg",
+        "Capture d’écran 2023-10-17 153315.png",
+        "pic11 (1).jpg",
+      ];
+
+      const imgg = document.getElementById("imgg");
+      let currentIndex = 0;
+
+      function slideImg() {
+        imgg.style.backgroundImage = `url(./imagesCleanbref3/${imgsSlide[currentIndex]})`;
+        currentIndex = (currentIndex + 1) % imgsSlide.length;
+      }
+
+      setInterval(slideImg, 1000);
+    </script>
   </body>
 </html>

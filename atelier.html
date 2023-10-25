@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="atelier.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="atelier.css">
+    <link rel="stylesheet" href="atelier.css" />
     <title>MucemWeb</title>
   </head>
   <body>
@@ -16,7 +17,6 @@
       <a href="./index.html"
         ><img class="logo" src="imagesCleanbref3/logo.png"
       /></a>
-
       <nav class="navbar">
         <a href="index.html">ACCUEIL</a>
         <a href="galerie.html">GALERIE</a>
@@ -24,79 +24,84 @@
       </nav>
     </header>
 
-
-    
     <main>
       <section class="phase_atelier1">
-        <div class="container-atelier">
-          <div class="opening_hours">
-            <div class="contaire_hours">
-              <div class="text-hour">
-                <h2>Opening Hours</h2>
-              </div>
-              <div class="hour">
-                <div class="hour-content">
-                  <p class="sem">Lundi</p>
-                  <p>08:00-18:00</p>
-                </div>
-                <div class="hour-content">
-                  <p class="sem">Dimanche</p>
-                  <p>09:00-18:00</p>
-                </div>
-                <div class="hour-content">
-                  <p class="sem">Jeudi</p>
-                  <p>08:00-19:00</p>
-                </div>
-                <div class="hour-content">
-                  <p class="sem">Samedi</p>
-                  <p>08:00-18:00</p>
-                </div>
-              </div>
+        <div class="topDiv">
+          <div class="divTitle">
+            <span>Horaire De La Semaine</span>
+          </div>
+          <div class="divbody">
+            <div class="hour-content">
+              <p>Lundi</p>
+              <p>08:00-18:00</p>
+            </div>
+            <div class="hour-content">
+              <p>Dimanche</p>
+              <p>09:00-18:00</p>
+            </div>
+            <div class="hour-content">
+              <p>Jeudi</p>
+              <p>08:00-19:00</p>
+            </div>
+            <div class="hour-content">
+              <p>Samedi</p>
+              <p>08:00-18:00</p>
             </div>
           </div>
-            <div class="REG">
-              <form onsubmit="return validation()">
-                <h2>Registration</h2>
-                <div class="container-contact">
-                  <div class="input-box">
-                    <div class="fichier">
-                      <input type="text" id="Prenom" placeholder="text" required />
-                      <i class="bx bxs-user"></i>
-                    </div>
-                  </div>
-                  </div>
-                  <div class="input-box">
-                    <div class="fichier">
-                      <input type="text" id="cin"   placeholder="CIN" required />
-                      <i class="bx bxs-user"></i>
-                    </div>
-                  </div>
-                  <div class="input-box">
-                    <div class="fichier">
-                      <input type="email" id="email"  placeholder="Email" required />
-                      <i class="bx bxl-gmail"></i>
-                    </div>
-                  </div>
-                  <div class="input-box">
-                    <div class="fichier">
-                      <input type="number" id="phone"    placeholder="Num_tele" required />
-                      <i class="bx bxs-phone"></i>
-                    </div>
-                  </div>
-                  <label>
-                  <input type="checkbox" />J'accepte toutes les conditions
-                  d'utilisation
-                </label>
-                <button type="submit" class="butt">Registrer</button>
-                </div>
-                
-              </form>
-            </div>
+        </div>
+        <div class="bottomDiv">
+          <div class="divTitle">
+            <span>Inscrivez-Vous</span>
           </div>
+          <div class="divbody">
+            <form onsubmit="return validation()">
+              <h2>Registration</h2>
+              <div class="container-contact">
+                <div class="input-box">
+                  <div class="fichier">
+                    <input
+                      type="text"
+                      id="Prenom"
+                      placeholder="text"
+                      required
+                    />
+                    <i class="bx bxs-user"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="input-box">
+                <div class="fichier">
+                  <input type="text" id="cin" placeholder="CIN" required />
+                  <i class="bx bxs-user"></i>
+                </div>
+              </div>
+              <div class="input-box">
+                <div class="fichier">
+                  <input type="email" id="email" placeholder="Email" required />
+                  <i class="bx bxl-gmail"></i>
+                </div>
+              </div>
+              <div class="input-box">
+                <div class="fichier">
+                  <input
+                    type="number"
+                    id="phone"
+                    placeholder="Num_tele"
+                    required
+                  />
+                  <i class="bx bxs-phone"></i>
+                </div>
+              </div>
+              <label>
+                <input type="checkbox" />J'accepte toutes les conditions
+                d'utilisation
+              </label>
+              <button type="submit" class="butt">Registrer</button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
-
-
 
     <footer class="footer_section">
       <div class="container">
@@ -117,34 +122,33 @@
       var cin = document.getElementById("cin").value;
       var email = document.getElementById("email").value;
       var number = document.getElementById("phone").value;
-  
+
       var fullnameRegex = /^[A-Za-z]+$/;
       var cinRegex = /^[A-Z]{2}[0-9]{6}$/;
       var emailRegex = /^[A-Za-z]+@.*\.com$/;
       var phoneRegex = /^[0-9]{10}$/;
-  
+
       function validation() {
-          if (!fullnameRegex.test(fullname)) {
-              alert("Nom et Prenom invalide");
-              return 0;
-          }
-  
-          if (!cinRegex.test(cin)) {
-              alert("CIN invalide");
-              return 0;
-          }
-  
-          if (!emailRegex.test(email)) {
-              alert("Email invalide");
-              return 0;
-          }
-  
-          if (!phoneRegex.test(number)) {
-              alert("Numéro de téléphone invalide");
-              return 0;
-          }
+        if (!fullnameRegex.test(fullname)) {
+          alert("Nom et Prenom invalide");
+          return 0;
+        }
+
+        if (!cinRegex.test(cin)) {
+          alert("CIN invalide");
+          return 0;
+        }
+
+        if (!emailRegex.test(email)) {
+          alert("Email invalide");
+          return 0;
+        }
+
+        if (!phoneRegex.test(number)) {
+          alert("Numéro de téléphone invalide");
+          return 0;
+        }
       }
-  </script>
-  
+    </script>
   </body>
 </html>
