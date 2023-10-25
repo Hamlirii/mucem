@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital@1&family=Inter:wght@100&family=Irish+Grover&family=Italianno&family=Playfair+Display:ital@1&family=Poppins:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+body,
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+p {
+  margin: 0;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.363);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40vw;
+  width: 100vw;
+  height: 6.5vw;
+  position: fixed;
+  top: 0;
+}
+.logo {
+  width: 8vw;
+  height: 8vw;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  margin-left: 5vw;
+  font-size: 1.5vw;
+}
+.navbar a:hover {
+  color: blue;
+  cursor: pointer;
+}
+.phase1 {
+  background-color: #9c7869a1;
+  width: 100%;
+  height: 23vw;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+h1 {
+  padding: 12%;
+  font-family: "Italic";
+  font-size: 3vw;
+  text-shadow: 5px 2px 5px #fff;
+}
+.btn {
+  height: 3vw;
+  width: 8vw;
+  margin-top: 150%;
+  border-radius: 5vw;
+  border: none;
+  box-shadow: 2px 5px 5px white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1vw;
+}
+.btn:hover {
+  background-color: rgb(169, 169, 220);
+  color: white;
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 5px 5px BLACK;
+}
+/* CSS pour la section "phase2" */
+.phase2 {
+  background-color: #9c786957;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-phase2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5%;
+  gap: 5%;
+}
+
+.left {
+  width: 60%;
+  font-size: 1.5vw;
+  line-height: 1.5;
+}
+.right {
+  width: 50%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.right img {
+  width: 100%;
+  max-height: auto;
+}
+
+.phase3 {
+  background-color: #7e665ccf;
+}
+.artistes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 35px;
+}
+.phase3 .crs1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.crs1 .carte {
+  height: 25vw;
+  width: 20vw;
+  list-style: none;
+  background: white;
+  border-radius: 1vw;
+  display: flex;
+  padding-bottom: 3vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.Art {
+  background-color: rgba(100, 148, 237, 0.477);
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  font-size: 1.5vw;
+  font-family: "Italianno";
+}
+/* footer section*/
+.footer_section {
+  background-color: #7e665ce0;
+  width: 100vw;
+  height: 13vw;
+}
+
+.footer_section p {
+  margin: 0;
+  padding-top: 1vw;
+  color: black;
+  text-align: center;
+  font-size: 1.3vw;
+}
+.footer_section h2 {
+  margin: 0;
+  padding-top: 3%;
+  color: black;
+  text-align: center;
+  font-size: 2.25vw;
+}
+.footer_section img {
+  padding-top: 0%;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  padding-top: 1%;
+}
+.icons img {
+  width: 3vw;
+}
+.icons img:hover {
+  /* nbdel url diyal les icones mnni treje3 lconnexion */
+}
+
+.footer_section a {
+  color: white;
+}
+.footer_section a:hover {
+  color: blue;
+  cursor: pointer;
+}
+/*galerie*/
+.phase_gal1 {
+  background-image: url(./imagesCleanbref3/pexels-rodion-kutsaiev-7897470.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  border: rgb(134, 104, 5) solid 0.3vw;
+  width: 80vw;
+  height: 65vh;
+  border-radius: 1.5vw;
+}
+.imgg {
+  max-width: 100%;
+  height: 100%;
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+  border-radius: 1.5vw;
+}
+@keyframes background {
+  0%,
+  100% {
+    background-image: url();
+  }
+  0%,
+  100% {
+    background-image: url();
+  }
+  0%,
+  100% {
+    background-image: url();
+  }
+  0%,
+  100% {
+    background-image: url();
+  }
+}
+.phase_gal1 h2 {
+  color: rgb(134, 104, 5);
+  text-decoration: underline;
+  font-size: 2.5vw;
+  margin: 5%;
+}
+/*atelier*/
+.phase_atelier1 {
+  background-image: url(imagesCleanbref3/person-working-pottery-workshop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.REG h2 {
+  font-size: 100%;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container-contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-items {
+  display: flex;
+  gap: 20%;
+}
+/* la partie diyal faq */
+
+.foire {
+  background-color: rgba(100, 148, 237, 0.477);
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  font-size: 1.5vw;
+  font-family: "Italianno";
+}
+.phase4 {
+  background-color: #cac8c7e0;
+  width: 100%;
+}
+.container-phase4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.question {
+  margin-bottom: 8%;
+  border: 1px solid blue;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(100, 148, 237, 0.477);
+  font-size: 1vw;
+}
+
+.entete-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  cursor: pointer;
+}
+
+.titre-question {
+  margin: 0;
+}
+
+.icone {
+  font-size: 100%;
+  font-weight: bold;
+  width: 20%;
+  text-align: end;
+}
+.faqimg {
+  width: 40%;
+}
+
+.reponse {
+  display: none;
+  padding: 1%;
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 767px) {
+  .container-phase2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-phase4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .logo {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  @media screen and (max-width: 767px) {
+    .container-phase2 {
+      flex-direction: column;
+    }
+
+    .right {
+      width: 80%;
+      overflow: hidden;
+    }
+  }
+}
+.container-phase3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px;
+    gap: 1rem;
+}
+.carte{
+    width: 200px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+    gap: 1rem;
+}
+.carte .immage {
+    width: 72px;
+    height: 72px;
+}
+.carte .immage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .carte h4 {
+    font-weight: 500;
+    font-size: 10px;
+  }
+  .carte button {
+    color: black;
+    font-size: 8px;
+    border-radius: 10px;
+    border: none;
+    width: 66px;
+    box-shadow: 4px 4px 4px blue;
+    padding: 5%;
+  }
+  .carte button:hover {
+    background: black;
+    color: #fff;
+  }

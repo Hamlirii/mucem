@@ -1,0 +1,37 @@
+.container-atelier {
+    background-color: red;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.contaire_hours {
+    display: flex;
+    gap: 30%;
+    align-items: center;
+}
+
+.text-hour {
+    background-color: #221B18;
+    padding: 3% 3%;
+    color: white;
+    border-radius: 10px;
+}
+
+.contaire_hours {
+    background-color: blue;
+    width: 100%;
+}
+.REG{
+    background-color: #221B18;
+    display: flex;
+    height: 50vh;
+}
+.hour{
+    display: flex;
+    gap: 20px;
+}
